@@ -1,0 +1,24 @@
+<div id="main">
+  <div class="header">
+    <h1>Page Identifiers</h1>
+    <h2>This will help to verify uniqueness and validity of web-page numeration</h2>
+  </div>
+
+  <div class="content">
+    <h2 class="content-subhead">How to use this</h2>
+    <p>
+      Open links in new Tabs, Windows and test whether everything is mapped correctly
+    </p>
+
+    <p>
+    You can specify custom number to count from (optional):
+      <input type="text" ng-model="startCountFrom" valid-number>      <a class="pure-button pure-button" ng-click="resetCounter();$event.preventDefault();" href="#">Reset</a>
+
+    </p>
+    <p>
+      <a class="pure-button pure-button-primary"   ng-click="openPageId($event);" href="#/pageDetails/{{startCountFrom}}">Open!</a>
+    </p>
+
+   </div>
+</div>
+
