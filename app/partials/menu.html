@@ -1,0 +1,10 @@
+<ul class="menu">
+
+
+    <li ng-repeat="link in availableLinks">
+        <a href="{{'#/' + link}}"  ng-click="boom(link);$event.preventDefault();">
+            {{link}}
+        </a>
+    </li>
+</ul>
+
